@@ -4,6 +4,7 @@ This repo contains files and notes about the [DigitalOcean Community Curriculum:
 
 > Ensure to edit the `hosts` file to match your configuration.
 
-- [How To Create a Kubernetes Cluster Using Kubeadm on Ubuntu 18.04](./create-cluster/README.md)
+- [How To Create a Kubernetes Cluster Using Kubeadm on Ubuntu 18.04](./create-cluster/)
+- [Webinar: A Closer Look at Kubernetes](./a-closer-look-at-k8s/)
 
   [1]: https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers
