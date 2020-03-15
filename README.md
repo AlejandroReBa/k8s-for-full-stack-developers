@@ -4,7 +4,12 @@ This repo contains files and notes about the [DigitalOcean Community Curriculum:
 
 > Ensure to edit the `hosts` file to match your configuration.
 
-- [How To Create a Kubernetes Cluster Using Kubeadm on Ubuntu 18.04](./create-cluster/)
-- [Webinar: A Closer Look at Kubernetes](./a-closer-look-at-k8s/)
+1. Introduction
+    - An Introduction to Kubernetes
+    - [How To Create a Kubernetes Cluster Using Kubeadm on Ubuntu 18.04](./create-cluster/)
+    - [Webinar: A Closer Look at Kubernetes](./a-closer-look-at-k8s/)
+    - An Introduction to Helm, the Package Manager for Kubernetes
+    - [How To Install Software on Kubernetes Clusters with the Helm Package Manager](./how-to-install-software-on-kubernetes-clusters-with-the-helm-package-manager/)
+2. Containers, Modernizing Applications and 12 Factor Development
 
   [1]: https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers
