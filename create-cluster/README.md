@@ -144,6 +144,10 @@ StackOverflow may save you: <https://stackoverflow.com/questions/47107117/how-to
 
 In my case, flannel was not installed properly and I run the installation manually and fixed it up.
 
+## Use k8s tools on your host
+
+If you install the tools on your host (or if you have Docker Desktop for Windows/Mac, you already have them), it will be easier to manage the cluster. First, ensure `~/.kube` does not have a `config` file inside it. If there is a `config`, then create a new folder to store the config and set the env var `KUBECONFIG` to the path to the new config for your cluster. Then copy the file `~/.kube/config` from your k8s master node to your host in the same place (or inside the new folder). If everything is OK, issuing, for example, `kubectl get nodes` should show the status of the nodes.
+
   [1]: https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04
   [2]: https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers
   [3]: https://www.pfsense.org
