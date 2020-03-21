@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecosia-treeminer
+  labels:
+    app: ecosia-treeminer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ecosia-treeminer
+  template:
+    metadata:
+      labels:
+        # This will be used in the service to send requests to the pod
+        app: ecosia-treeminer
+    spec:
+      containers:
+      # Miner container
+      - name: miner
+        image: majorcadevs/ecosia-treeminer
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        # Store logs in a pod-level volume
+        volumeMounts:
+        - name: miner-logs
+          mountPath: /ecosia-treeminer/logs/
+        # "healthcheck"
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 30
+        # The readiness probe here is only to show what it looks like, but it is not useful for
+        # that simple deployment
+        # readinessProbe:
+        #  httpGet:
+        #    path: /
+        #    port: 8080
+        #  initialDelaySeconds: 5
+        #  periodSeconds: 1
+      volumes:
+      - name: miner-logs
+        emptyDir: {}

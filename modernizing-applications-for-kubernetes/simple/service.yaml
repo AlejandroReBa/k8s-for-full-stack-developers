@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecosia-treeminer-svc
+  labels:
+    app: ecosia-treeminer
+spec:
+  selector:
+    # Each pod with this label will be used to send requests
+    app: ecosia-treeminer
+  type: NodePort
+  ports:
+    - port: 8080
+      name: http
+      targetPort: 8080
+      protocol: TCP
