@@ -11,5 +11,6 @@ This repo contains files and notes about the [DigitalOcean Community Curriculum:
     - An Introduction to Helm, the Package Manager for Kubernetes
     - [How To Install Software on Kubernetes Clusters with the Helm Package Manager](./how-to-install-software-on-kubernetes-clusters-with-the-helm-package-manager/)
 2. Containers, Modernizing Applications and 12 Factor Development
+    - [Architecting Applications for Kubernetes](./architecting-applications-for-kubernetes/)
 
   [1]: https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers

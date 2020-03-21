@@ -10,7 +10,7 @@ This one-liner will install Helm in a glimpse:
 bash <(curl -sSL https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get)
 ```
 
-## Step 2 - Summary commands to install Helm
+## Step 2 - Commands to install Helm
 
 ```sh
 # Create Service Account tiller
