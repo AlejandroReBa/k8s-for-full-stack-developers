@@ -13,5 +13,8 @@ This repo contains files and notes about the [DigitalOcean Community Curriculum:
 2. Containers, Modernizing Applications and 12 Factor Development
     - [Architecting Applications for Kubernetes](./architecting-applications-for-kubernetes/)
     - [Modernizing Applications for Kubernetes](./modernizing-applications-for-kubernetes/)
+    - How To Build a Node.js Application with Docker
+    - Containerizing a Node.js Application for Development With Docker Compose
+    - [How to Set Up DigitalOcean Kubernetes Cluster Monitoring with Helm and Prometheus Operator](./how-to-set-up-digitalocean-kubernetes-cluster-monitoring-with-helm-and-prometheus-operator/)
 
   [1]: https://www.digitalocean.com/community/curriculums/kubernetes-for-full-stack-developers

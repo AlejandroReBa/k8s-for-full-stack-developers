@@ -2,8 +2,8 @@
 
 For [this guide][1], I will create two deployment for [MajorcaDevs/ecosia-treeminer][2] using this guide.
 
-- `simple`: simple deployment with only the treeminer and a service to be able to acces it.
-- `with-tor`: treeminer with tor in a pod, and its service.
+- [simple](./simple/): simple deployment with only the treeminer and a service to be able to acces it.
+- [with-tor](./with-tor/): treeminer with tor in a pod, and its service.
 
 You can deploy each using:
 
